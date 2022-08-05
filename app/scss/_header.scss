@@ -1,0 +1,109 @@
+.header {
+    background-color: $darkBlue;
+    color: $white;
+    padding-top: 28px;
+    padding-bottom: 50px;
+    position: relative;
+    height: 100vh;
+    &__img{
+        position: absolute;
+        content: '';
+        right: 0;
+        bottom: 0;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+
+    }
+
+    &__menu-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__menu-link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    &__basket-btn {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 76px;
+        max-width: 604px;
+        margin-bottom: 34px;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 34px;
+        max-width: 543px;
+        margin-bottom: 44px;
+    }
+
+    &__btn {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $black;
+        padding: 20px 80px 20px 40px;
+        background-color: #fff;
+        border: 2px solid #FFF;
+        border-radius: 32px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 24px;
+            height: 24px;
+            right: 40px;
+            top: 29%;
+            background-image: url(../images/header__btn-icon.svg);
+        }
+    }
+
+    &__award {
+        margin-top: 122px;
+        padding-left: 84px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 64px;
+            height: 64px;
+            left: 0;
+            top: -5px;
+            background-image: url(../images/header__award-icon.svg);
+        }
+
+        & p+p {
+            margin-top: 7px;
+            color: rgba(255, 255, 255, 0.6);
+
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    &__award-text {}
+}
