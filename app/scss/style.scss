@@ -2,3 +2,7 @@
 @import '_reset';
 @import '_mixing';
 
+body {
+    font-family: $epilogue;
+    color: $black;
+}
