@@ -1,0 +1,89 @@
+.about {
+    padding-top: 144px;
+    padding-bottom: 206px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__comment {
+        margin-top: 115px;
+
+    }
+
+    &__comment-star {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 23px;
+    }
+
+    &__comment-text {
+        font-size: 19px;
+        line-height: 28px;
+        max-width: 391px;
+        margin-bottom: 27px;
+    }
+
+    &__comment-name {
+        padding-left: 88px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 64px;
+            height: 64px;
+            left: 0;
+            top: -10%;
+            background-image: url(../images/comment__img.jpg);
+
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        & p+p {
+            font-size: 15px;
+            line-height: 24px;
+            margin-top: 7px;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 54px;
+        max-width: 767px;
+        margin-bottom: 74px;
+    }
+
+    &__statistic {
+        display: flex;
+        gap: 64px;
+        align-items: center;
+        margin-bottom: 69px;
+    }
+
+    &__statistic-num {
+        font-size: 60px;
+        line-height: 66px;
+        color: $purple;
+        margin-bottom: 8px;
+
+    }
+
+    &__statistic-description {
+        font-size: 21px;
+        line-height: 31px;
+    }
+
+    &__partner{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+}
