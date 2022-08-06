@@ -1,0 +1,86 @@
+.offer {
+    color: $white;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .offer__item:nth-child(1) {
+            background-image: url(../images/offer__bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            & .offer__text {
+                margin-bottom: 47px;
+            }
+
+            & .offer__btn {
+                font-size: 18px;
+                line-height: 25px;
+                padding-bottom: 10px;
+                position: relative;
+                padding-right: 52px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 24px;
+                    height: 24px;
+                    right: 0;
+                    top: -12%;
+                    background-image: url(../images/offer__btn-arrow.svg);
+                }
+            }
+
+        }
+
+        & .offer__item:nth-child(2) {
+            background-color: $purple;
+
+            & .offer__text {
+                margin-bottom: 20px;
+            }
+
+            & .offer__btn {
+                font-size: 18px;
+                line-height: 24px;
+                position: relative;
+                padding-right: 52px;
+                
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 24px;
+                    height: 24px;
+                    right: 0;
+                    top: -12%;
+                    background-image: url(../images/offer__btn-arrow.svg);
+                }
+            }
+            
+        }
+
+    }
+
+    &__item {
+        flex-basis: 50%;
+        text-align: center;
+        padding: 104px 163px;
+        padding-bottom: 135px;
+        height: 400px;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 19px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
