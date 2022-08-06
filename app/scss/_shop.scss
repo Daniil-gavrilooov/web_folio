@@ -33,4 +33,9 @@
         line-height: 28px;
         color: $darkBlue;
     }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
 }
