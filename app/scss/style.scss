@@ -5,6 +5,7 @@
 @import '_about';
 @import '_work';
 @import '_services';
+@import '_testimonials';
 
 body {
     font-family: $epilogue;
@@ -25,7 +26,8 @@ body {
     color: $purple;
     padding-left: 92px;
     position: relative;
-    &::before{
+
+    &::before {
         position: absolute;
         content: '';
         width: 72px;
@@ -33,5 +35,49 @@ body {
         left: 0;
         top: 15%;
         background-image: url(../images/lleft__title-line.svg);
+    }
+}
+
+.section {
+    &__head {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $purple;
+        position: relative;
+        max-width: 327px;
+        margin: 0 auto;
+        margin-bottom: 22px;
+
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            width: 72px;
+            height: 10px;
+            top: 23%;
+            background-image: url(../images/lleft__title-line.svg);
+        }
+
+        &::after {
+            right: 0;
+
+        }
+
+        &::before {
+            left: 0;
+        }
+    }
+
+    &__subtitle {
+        font-size: 60px;
+        line-height: 66px;
+        max-width: 623px;
+        margin: 0 auto;
     }
 }
