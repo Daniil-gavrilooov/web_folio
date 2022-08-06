@@ -1,0 +1,36 @@
+.shop {
+    padding-bottom: 140px;
+
+    & .section__head .section__subtitle {
+        max-width: 626px;
+        font-size: 48px;
+        line-height: 53px;
+    }
+
+    & .section__head .section__title {
+        max-width: 236px;
+    }
+
+    &__content {
+        margin-top: 80px;
+        margin-bottom: 82px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+
+    &__item-title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 32px;
+        margin-bottom: 6px;
+        color: $darkBlue;
+    }
+
+    &__item-description {
+        font-size: 18px;
+        line-height: 28px;
+        color: $darkBlue;
+    }
+}

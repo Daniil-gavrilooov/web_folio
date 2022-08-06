@@ -7,6 +7,7 @@
 @import '_services';
 @import '_testimonials';
 @import '_process';
+@import '_shop';
 
 body {
     font-family: $epilogue;
@@ -80,5 +81,29 @@ body {
         line-height: 66px;
         max-width: 623px;
         margin: 0 auto;
+    }
+}
+
+.view-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 19px;
+    color: $purple;
+    padding-right: 34px;
+    padding-bottom: 12px;
+    position: relative;
+    border-bottom: 2px solid  rgba(69, 67, 232, 0.2);
+    max-width: 188px;
+    margin: 0 auto;
+    &::after{
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 24px;
+        right: 0;
+        top: -10%;
+        background-image: url(../images/view__btn-arrow.svg);
+
     }
 }
