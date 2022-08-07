@@ -1,6 +1,7 @@
 .work {
     padding-bottom: 206px;
 
+
     &__head {
         margin-bottom: 78px;
     }
@@ -17,11 +18,14 @@
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        row-gap: 79px;
-        margin-bottom: 174px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        & + .work__content{
+            margin-bottom: 174px;
+            margin-top: 79px;
+        }
     }
 
     &__content .work__item:nth-child(1) .work__item-info,
@@ -75,5 +79,39 @@
         padding: 60px 44px;
         background-color: $purple;
         color: $white;
+    }
+    & img {
+    
+    }
+}
+
+@media (max-width: 1150px) {
+    .work{
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__content{
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .work{
+        padding-bottom: 50px;
+        &__head{
+            margin-bottom: 40px;
+        }
+        &__title{
+            font-size: 35px;
+            line-height: 45px;
+            margin-top: 10px;
+        }
+        &__content + .work__content{
+            margin-bottom: 50px;
+        }
     }
 }
