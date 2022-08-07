@@ -4,7 +4,8 @@
     padding-top: 28px;
     padding-bottom: 50px;
     position: relative;
-    &__img{
+
+    &__img {
         position: absolute;
         content: '';
         right: 0;
@@ -14,7 +15,7 @@
     &__top {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         margin-bottom: 100px;
 
     }
@@ -38,6 +39,11 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
+        max-width: 100px;
+    }
+
+    &__burger-btn {
+        display: none;
     }
 
     &__title {
@@ -103,6 +109,128 @@
             line-height: 26px;
         }
     }
+}
 
-    &__award-text {}
+@media (max-width: 1250px) {
+    .header {
+        &__content {
+            z-index: 5;
+        }
+
+        &__img {
+            z-index: 2;
+            opacity: 0.2;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .body-lock{
+        overflow: hidden;
+    }
+    .header {
+        overflow: hidden;
+        position: relative;
+
+        &__burger-menu {
+            position: absolute;
+            content: '';
+            right: 0%;
+            top: 0%;
+            z-index: 6;
+            background-color: $darkBlue;
+            height: 100vh;
+            transform: translateX(100%);
+            transition: all .5s ease;
+
+            &--active {
+                transform: translateX(0);
+                transition: all .5s ease;
+            }
+        }
+
+        &__menu {
+            padding: 80px 50px 80px 150px;
+        }
+
+        &__menu-list {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__basket {
+            margin-left: auto;
+            z-index: 7;
+        }
+
+        &__burger-btn {
+            display: block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            margin-left: 20px;
+            z-index: 7;
+
+            &::after,
+            &::before,
+            & span {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 2px;
+                background-color: #fff;
+                transition: all .5s ease;
+            }
+
+            &::before {
+                bottom: 0;
+            }
+
+            & span {
+                top: 45%;
+            }
+
+            &--active::after {
+                transform: rotate(45deg);
+                top: 35%;
+                transition: all .5s ease;
+            }
+
+            &--active::before {
+                transform: rotate(-45deg);
+                bottom: 52%;
+                transition: all .5s ease;
+            }
+
+            &--active span {
+                transform: scale(0);
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .header {
+        &__title {
+            font-size: 50px;
+            line-height: 59px;
+            margin-bottom: 14px;
+        }
+        &__award{
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 281px) {
+    .header{
+        &__basket{
+            opacity: 0;
+            transition: all .7s ease;
+            &--active{
+                opacity: 1;
+                transition: all .7s ease;
+            }
+        }
+    }
 }

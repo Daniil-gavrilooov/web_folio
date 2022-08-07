@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
 
     <header class="header">
         <div class="container">
@@ -21,31 +21,34 @@
                 <a class="logo" href="#">
                     <img src="images/logo.svg" alt="logo">
                 </a>
-
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Work</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">About</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Shop</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Blog</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                <div class="header__burger-menu">
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Work</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">About</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Shop</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Blog</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="header__basket">
                     <button class="header__basket-btn">
                         Cart <span>(0)</span>
                     </button>
+                </div>
+                <div class="header__burger-btn">
+                    <span></span>
                 </div>
             </div>
 
@@ -80,7 +83,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <!-- <main class="main">
         <section class="about">
             <div class="container">
                 <div class="about__inner">
@@ -776,7 +779,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="js/main.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
