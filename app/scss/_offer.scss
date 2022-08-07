@@ -23,7 +23,7 @@
                 position: relative;
                 padding-right: 52px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-                
+
                 &::after {
                     position: absolute;
                     content: '';
@@ -49,7 +49,7 @@
                 line-height: 24px;
                 position: relative;
                 padding-right: 52px;
-                
+
                 &::after {
                     position: absolute;
                     content: '';
@@ -60,7 +60,7 @@
                     background-image: url(../images/offer__btn-arrow.svg);
                 }
             }
-            
+
         }
 
     }
@@ -82,5 +82,35 @@
     &__text {
         font-size: 14px;
         line-height: 28px;
+        max-width: 393px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .offer {
+        &__text {
+            font-size: 10px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .offer {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        &__item {
+            width: 100%;
+            padding: 104px 0;
+        }
+
+        &__text {
+            max-width: 200px;
+        }
     }
 }
